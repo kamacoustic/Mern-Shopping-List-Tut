@@ -1,0 +1,26 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "Shopping List built with MERN",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client/shopping && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Kelvin Mojica",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.3.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
